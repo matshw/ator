@@ -1,0 +1,15 @@
+data/
+
+vendor/
+
+
+phpunit/
+
+docker-compose.yml
+.phpunit.result.cache
+composer.json
+composer.lock
+phpunit.xml
+README.md
+conn
+*.conf

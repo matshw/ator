@@ -1,6 +1,8 @@
 <?php
+require '../utils/db.php';
 class Ator
 {
+    private $db;
     private $id;
     private $nome;
     private $nacionalidade;
@@ -12,6 +14,13 @@ class Ator
         $this->nome = $nome;
         $this->nacionalidade = $nacionalidade;
         $this->dataNascimento = $dataNascimento;
+
+        $this->db = new Database();
+        $this->db->conectar();
+    }
+    public function __destruct()
+    {
+        $this->db->desconectar();
     }
     public function getId()
     {
@@ -52,4 +61,5 @@ class Ator
     {
         $this->dataNascimento = $dataNascimento;
     }
+
 }
