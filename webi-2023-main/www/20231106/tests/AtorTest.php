@@ -4,6 +4,9 @@ use PHPUnit\Framework\TestCase;
 require 'vendor/autoload.php';
 require 'src/model/Ator.php';
 require 'src/controller/AtorController.php';
+require 'src/utils/db.php';
+
+
 
 class AtorTest extends TestCase
 {

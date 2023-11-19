@@ -1,4 +1,5 @@
 <?php
+include '../utils/db.php';
 
 class AtorController
 {
